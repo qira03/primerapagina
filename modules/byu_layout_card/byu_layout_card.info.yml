@@ -1,0 +1,15 @@
+name: BYU Layout Card
+type: module
+description: A demo of creating your own layouts via a custom module or theme.
+# core: 8.x
+package: BYU
+dependencies:
+  - field_layout
+  - field
+  - twig_field_value
+
+# Information added by Drupal.org packaging script on 2018-05-03
+version: '8.x-1.0-rc3'
+core: '8.x'
+project: 'byu_layout_card'
+datestamp: 1525378086

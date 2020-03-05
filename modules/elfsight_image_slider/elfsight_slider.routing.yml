@@ -1,0 +1,7 @@
+elfsight_slider.content:
+  path: 'admin/elfsight_slider'
+  defaults:
+    _controller: '\Drupal\elfsight_slider\Controller\ElfsightSliderController::content'
+    _title: 'Elfsight Slider'
+  requirements:
+    _permission: 'access admin'

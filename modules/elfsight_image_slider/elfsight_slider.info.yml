@@ -1,0 +1,13 @@
+name: Elfsight Slider
+description: Elfsight Slider module for drupal website.
+package: Elfsight
+
+type: module
+core: 8.x
+
+php: 7.1.9
+
+# Information added by Drupal.org packaging script on 2019-10-01
+version: '8.x-1.x-dev'
+project: 'elfsight_image_slider'
+datestamp: 1569917586

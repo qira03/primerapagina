@@ -1,0 +1,76 @@
+{{ attach_library('byu_layout_card/byu-feature-card') }}
+
+{# need to add image and other field support #}
+{% set my_attributes = create_attribute() %}
+{% set my_classes = '' %}
+
+{#
+    {% for field in content.settings %}
+        {% for i in 0..10  if field[i] is defined %}
+            {{ kint(field[i]) }}
+            {% if field[i] is iterable %}
+
+                    {%  set fieldParts = field[i] %}
+                    {% for y in 0..10  if field[i][y] is defined %}
+                        {{ field[i][y] }}
+                    {% endfor %}
+
+
+            {% else %}
+                {% set my_classes =  field[i] %}
+            {% endif %}
+
+        {% endfor %}
+    {% endfor %}
+#}
+
+            {% for field in content.classes %}
+                {% for i in 0..10  if field[i] is defined %}
+                    {% set my_classes = field[i]|e %}
+                {% endfor %}
+            {% endfor %}
+{#
+{% for field in content.attributes %}
+                {% for i in 0..10  if field[i] is defined %}
+                    {% set my_attributes = field[i]|e %}
+                {% endfor %}
+            {% endfor %} #}
+
+
+{# <byu-feature-card {{ create_attribute({'color': ['blue']}>  #}
+ <byu-feature-card {{ my_attributes.addClass(my_classes).setAttribute('id', 'myUniqueId') }}>
+
+
+    {% for field in content.title %}
+        {% for i in 0..1 if field[i] is defined %} {# only allow 2? one and subtitle maybe?#}
+            <div slot="title">{{ field[i] }}</div>
+        {% endfor %}
+        {# else #}
+    {% endfor %}
+    {% for field in content.feature_top %}
+        {% for i in 0..field|length if field[i] is defined %}
+            <div slot="feature-top">{{ field[i] }}</div>
+        {% endfor %}
+    {% endfor %}
+
+    {% for field in content.feature_left %}
+        {% for i in 0..field|length  if field[i] is defined %}
+            <div slot="feature-left">{{ field[i] }}</div>
+        {% endfor %}
+    {% endfor %}
+
+    {% for field in content.feature_right %}
+        {% for i in 0..field|length  if field[i] is defined %}
+            <div slot="feature-right">{{ field[i] }}</div>
+        {% endfor %}
+    {% endfor %}
+
+    {% for field in content.feature_center %}
+        {% for i in 0..field|length  if field[i] is defined %}
+            <div slot="feature-center">{{ field[i] }}</div>
+        {% endfor %}
+    {% endfor %}
+
+</byu-feature-card>
+
+

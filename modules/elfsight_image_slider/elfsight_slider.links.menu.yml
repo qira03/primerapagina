@@ -1,0 +1,6 @@
+elfsight_slider.admin:
+  title: 'Elfsight Slider settings'
+  description: 'Elfsight Slider module settings'
+  parent: system.admin_config_development
+  route_name: elfsight_slider.content
+  weight: 100
