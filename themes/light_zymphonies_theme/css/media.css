@@ -1,8 +1,8 @@
-@media (min-width: 767px){.team,.topwidget,.footer,.bottom-widget,.path-frontpage 
+@media (min-width: 767px){.team,.topwidget,.footer,.bottom-widget,.path-frontpage
 .main-content,.services,.products,.footer,.features,.services,.price-table,
 .copyright{padding:100px 0}
 .navbar-toggle{display:none
-}.user-logged-in .main-header{position:relative 
+}.user-logged-in .main-header{position:relative
 }.flexslider{
 position: relative;
 }.flexslider .slider-caption{display:block}.flexslider .flex-direction-nav{display:block;margin-top:-24px}
@@ -12,7 +12,8 @@ position: relative;
 .region-primary-menu ul ul{background:#fff;background:#1d2c3d;border-radius:5px}
 .region-primary-menu ul ul li a{color:#fff;padding:18px 15px}
 .region-primary-menu ul ul li a:hover,.region-primary-menu ul ul li a:focus,.region-primary-menu ul ul li a:active,
-.region-primary-menu ul ul li a.highlighted{color:#6a82ff;padding:18px 15px}
+/****SEÑALADO SUBMENÚ****/
+.region-primary-menu ul ul li a.highlighted{color:#fff;padding:18px 15px}
 .region-primary-menu ul ul li{border-bottom:1px solid rgba(255,255,255,0.13)}
 .region-primary-menu ul ul li a{color:#fff}
 .region-primary-menu li{border:0}.region-primary-menu li a{background:none;border:0;font-weight:400;color:#1d2c3d}

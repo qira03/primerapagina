@@ -59,7 +59,8 @@
 #}
 
 <div class="header">
-  <div class="container">
+  <!--****************** COMENTAMOS EL CONTAINER SIN MARGEN HIGH
+  <div class="container"> ********************************************************************-->
     <div class="row">
 
       <!-- Start: Header -->
@@ -86,8 +87,11 @@
       </div>
 
     </div>
-  </div>
-</div>
+
+    <!--**
+  </div> -->
+  <!--** AQUÍ BORRÉ UN DIV -->
+
 
 <!--SETTING SLIDER **************************************************************-->
 {% if is_front and show_slideshow%}
@@ -110,22 +114,22 @@
     <div class="container">
         <div class="row clearfix">
 
-          <!-- Start: Top widget first -->          
+          <!-- Start: Top widget first -->
           {% if page.topwidget_first %}
             <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
-          {% endif %}          
-          <!-- End: Top widget first --> 
+          {% endif %}
+          <!-- End: Top widget first -->
 
-          <!-- Start: Top widget second -->          
+          <!-- Start: Top widget second -->
           {% if page.topwidget_second %}
             <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
-          {% endif %}          
-          <!-- End: Top widget second --> 
-          
-          <!-- Start: Top widget third -->         
+          {% endif %}
+          <!-- End: Top widget second -->
+
+          <!-- Start: Top widget third -->
           {% if page.topwidget_third %}
             <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
-          {% endif %}          
+          {% endif %}
           <!-- End: Top widget third -->
 
         </div>
@@ -135,7 +139,7 @@
 
 <!--End: Top widget -->
 
-    
+
 <!--Start: Highlighted -->
 
 {% if page.highlighted %}
@@ -193,7 +197,7 @@
           <div class={{contentlayout}}>
             <div class="content_layout">
               {{ page.content }}
-            </div>              
+            </div>
           </div>
         {% endif %}
         <!-- End: Content -->
@@ -207,9 +211,9 @@
           </div>
         {% endif %}
         <!-- End: Right SideBar -->
-        
+
       </div>
-    
+
     </div>
   </div>
 </div>
@@ -293,16 +297,16 @@
 
 {% if page.pricetable_first or page.pricetable_second or page.pricetable_third %}
 
-  <div class="price-table" id="price-table">    
+  <div class="price-table" id="price-table">
     <div class="container">
       <div class="row">
 
-        <!-- Start: Bottom First -->          
+        <!-- Start: Bottom First -->
         {% if page.pricetable_first %}
           <div class = {{ pricetable_class }}>
             {{ page.pricetable_first }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom First -->
 
         <!-- Start: Bottom Second -->
@@ -310,23 +314,23 @@
           <div class = {{ pricetable_class }}>
             {{ page.pricetable_second }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Second -->
 
-        <!-- Start: Bottom third -->          
+        <!-- Start: Bottom third -->
         {% if page.pricetable_third %}
           <div class = {{ pricetable_class }}>
             {{ page.pricetable_third }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Third -->
 
-        <!-- Start: Bottom third -->          
+        <!-- Start: Bottom third -->
         {% if page.pricetable_forth %}
           <div class = {{ pricetable_class }}>
             {{ page.pricetable_forth }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Third -->
 
       </div>
@@ -342,16 +346,16 @@
 
 {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
 
-  <div class="bottom-widget" id="bottom-widget">    
+  <div class="bottom-widget" id="bottom-widget">
     <div class="container">
       <div class="row">
 
-        <!-- Start: Bottom First -->          
+        <!-- Start: Bottom First -->
         {% if page.bottom_first %}
           <div class = {{ bottom_class }}>
             {{ page.bottom_first }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom First -->
 
         <!-- Start: Bottom Second -->
@@ -359,15 +363,15 @@
           <div class = {{ bottom_class }}>
             {{ page.bottom_second }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Second -->
 
-        <!-- Start: Bottom third -->          
+        <!-- Start: Bottom third -->
         {% if page.bottom_third %}
           <div class = {{ bottom_class }}>
             {{ page.bottom_third }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Third -->
 
         <!-- Start: Bottom Forth -->
@@ -391,16 +395,16 @@
 
 {% if page.team_first or page.team_second or page.team_third or page.team_forth %}
 
-  <div class="team" id="team">    
+  <div class="team" id="team">
     <div class="container">
       <div class="row">
 
-        <!-- Start: Bottom First -->          
+        <!-- Start: Bottom First -->
         {% if page.team_first %}
           <div class = {{ team_class }}>
             {{ page.team_first }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom First -->
 
         <!-- Start: Bottom Second -->
@@ -408,15 +412,15 @@
           <div class = {{ team_class }}>
             {{ page.team_second }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Second -->
 
-        <!-- Start: Bottom third -->          
+        <!-- Start: Bottom third -->
         {% if page.team_third %}
           <div class = {{ team_class }}>
             {{ page.team_third }}
           </div>
-        {% endif %}          
+        {% endif %}
         <!-- End: Bottom Third -->
 
         <!-- Start: Bottom Forth -->
@@ -442,7 +446,7 @@
 
   <div class="footer" id="footer">
     <div class="container">
-      <div class="parallax-region wow- bounceInUp">  
+      <div class="parallax-region wow- bounceInUp">
         <div class="row">
 
           <!-- Start: Footer First -->
@@ -527,12 +531,7 @@
   <div class="map-and-address">
     <div class="google_map">{{ page.google_map }}</div>
   </div>
-  
+
 {% endif %}
 
 <!--End: Map -->
-
-
-
-
-
