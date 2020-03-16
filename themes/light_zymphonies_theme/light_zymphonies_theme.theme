@@ -139,8 +139,8 @@ function light_zymphonies_theme_preprocess_page(&$variables) {
   $current_url  = \Drupal::request()->getRequestUri();
   $current_path = explode("/", $current_url);
   $variables['current_path'] = $current_path[2];
-  
-  
+
+
   // Slider
   // Assign Variable for slider
   if ($variables['is_front']) {
@@ -191,7 +191,7 @@ function light_zymphonies_theme_get_slider_content() {
       <div class="slider-caption">
         <h2 class="slider-title">' . theme_get_setting('slide_title_' . $i, 'light_zymphonies_theme').'</h2>
         <div class="clearfix"><p class="slider-description">' . theme_get_setting('slide_description_' . $i, 'light_zymphonies_theme').'</p></div>
-        <a href=' . theme_get_setting('slide_url_' . $i, 'light_zymphonies_theme') . ' class="more-link">Read more</a>
+        <a href=' . theme_get_setting('slide_url_' . $i, 'light_zymphonies_theme') . ' class="more-link">Leer más</a>
       </div>
     </li>';
   }
@@ -264,8 +264,8 @@ function light_zymphonies_theme_form_system_theme_settings_alter(&$form, \Drupal
     '#default_value' => theme_get_setting('show_credit_link'),
     '#description'   => t("Highly recommend to display credit in footer"),
   );
-  
-  //Slide show configure 
+
+  //Slide show configure
   $form['light_zymphonies_theme_settings']['slideshow'] = array(
     '#type' => 'details',
     '#title' => t('Front Page Slideshow'),
@@ -288,7 +288,7 @@ function light_zymphonies_theme_form_system_theme_settings_alter(&$form, \Drupal
   $form['light_zymphonies_theme_settings']['slideshow']['slide'] = array(
     '#markup' => t('Change the banner image, title, description and link using below fieldset'),
   );
-  
+
   for ($i = 1; $i <= theme_get_setting('no_of_slides'); $i++) {
     $form['light_zymphonies_theme_settings']['slideshow']['slide' . $i] = array(
       '#type' => 'details',
@@ -311,7 +311,7 @@ function light_zymphonies_theme_form_system_theme_settings_alter(&$form, \Drupal
       '#type' => 'textarea',
       '#title' => t('Slide '.$i.' Description'),
       '#default_value' => theme_get_setting('slide_description_' . $i,'light_zymphonies_theme'),
-    );    
+    );
     $form['light_zymphonies_theme_settings']['slideshow']['slide' . $i]['slide_url_' . $i] = array(
       '#type' => 'textfield',
       '#title' => t('Slide '.$i.' URL'),

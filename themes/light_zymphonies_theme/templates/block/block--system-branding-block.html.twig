@@ -16,6 +16,7 @@
 {% set attributes = attributes.addClass('site-branding') %}
 {% block content %}
   {% if site_logo %}
+  <p>
     <div class="brand logo">
       <a href="http://www.unicauca.edu.co/versionP/">
         <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
@@ -32,6 +33,7 @@
       <!-- {% if site_slogan %}
         <div class="site-branding__slogan">{{ site_slogan }}</div>
       {% endif %} -->
+      </p>
     </div>
   {% endif %}
 {% endblock %}

@@ -58,7 +58,7 @@
  */
 #}
 
-<div class="header">
+<div class="header logo-nav-container">
   <!--****************** COMENTAMOS EL CONTAINER SIN MARGEN HIGH
   <div class="container"> ********************************************************************-->
     <div class="row">
@@ -66,18 +66,21 @@
       <!-- Start: Header -->
 
       <div class="navbar-header col-md-3">
+
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
         </button>
+
         {% if page.header %}
           {{ page.header }}
         {% endif %}
+
       </div>
 
       <!-- End: Header -->
 
       {% if page.primary_menu %}
-        <div class="col-md-9">
+        <div class="col-md-9 hola">
           <div class="main-menu">
             {{ page.primary_menu }}
           </div>
@@ -96,7 +99,7 @@
 <!--SETTING SLIDER **************************************************************-->
 {% if is_front and show_slideshow%}
   <!--<div class="container">-->
-    <div class="flexslider">
+    <div class="flexslider margensuperior">
       <ul class="slides">
         {% for slider_contents in slider_content %}
           {{ slider_contents | raw }}
@@ -143,10 +146,11 @@
 <!--Start: Highlighted -->
 
 {% if page.highlighted %}
-  <div class="highlighted">
-    <div class="container">
+  <div class="highlighted margensuperior">
+    <!--******** COMENTO CONTAINER **********
+    <div class="container">-->
       {{ page.highlighted }}
-    </div>
+    <!--</div>-->
   </div>
 {% endif %}
 

@@ -66,9 +66,9 @@ nav h2{
 			padding: 24px 20px;
 			font-size: 1.1em;
 
-			&:hover, 
-			&:focus, 
-			&:active, 
+			&:hover,
+			&:focus,
+			&:active,
 			&.highlighted{
 				background: none;
 				color: $menuTextActiveColor;
@@ -89,7 +89,7 @@ nav h2{
 				line-height: 120%;
 				font-size: 2em;
 			}
-		} 
+		}
 	}
 }
 
@@ -104,13 +104,13 @@ nav h2{
 
 /*Footer Menu*/
 
-.region-footer-menu{	
+.region-footer-menu{
 
 	ul{
 		margin: 10px 0;
 		padding: 0;
 	}
-	
+
 	nav li{
 		display: inline-block;
 		a{
@@ -155,12 +155,12 @@ nav h2{
 		margin: 0;
 		padding: 0;
 	}
-	
+
 	nav li{
 		display: inline-block;
-		
+
 		a{
-		    padding: 2px 10px; 
+		    padding: 2px 10px;
 		    text-transform: uppercase;
 		    line-height: 100%;
 		}
