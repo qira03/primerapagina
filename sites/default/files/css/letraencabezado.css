@@ -1,0 +1,98 @@
+.fondo {
+/*  font: 400 1em/1.5 "Oswald", sans-serif;
+  background: #262b5e;
+  text-color: #fff;
+  text-align: center;
+  margin: 0;*/
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.parrafo {
+  font: 400 1em/1.5 "Poppins", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 2px gray;
+  /**********************************
+  background: #111b74;*/
+
+/*
+
+
+background: rgba(73,155,234,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(37,54,95,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 100%);
+background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#25365f', GradientType=1 );
+*/
+
+background: rgba(73,155,234,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 83%, rgba(37,54,95,1) 93%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(83%, rgba(37,54,95,1)), color-stop(93%, rgba(37,54,95,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 83%, rgba(37,54,95,1) 93%);
+background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 83%, rgba(37,54,95,1) 93%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 83%, rgba(37,54,95,1) 93%);
+background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(37,54,95,1) 83%, rgba(37,54,95,1) 93%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#25365f', GradientType=1 );
+
+  /****************************************/
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: relative;
+  /*top: 18%;*/
+  left: 0;
+  width: 100%;
+  margin: 0 0 0 0;
+}
+.parrafo span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url('../images/fondoletras.png') repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
+@media handheld, only screen and (max-width: 767px) {
+.parrafo {
+display:none;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+.parrafo {
+display:none;
+}
+}

@@ -24,7 +24,7 @@ border-color:#f9c9bf #f9c9bf #f9c9bf transparent;box-shadow:-8px 0 0 #e62600}
 .tabs>li{display:inline-block;margin-right:0.3em}
 .tabs a{display:block;padding:6px 10px;text-decoration:none;font-size:13px;background:#e6e6e6;
 line-height:100%;color:#444}
-.tabs a.is-active{background-color:#1d2c3d;color:#fff}
+.tabs a.is-active{background-color:#241178;color:#fff}
 .tabs a:focus,.tabs a:hover{background-color:#182fa5;color:#fff}table{width:100%;margin:0 0 10px}
 caption{text-align:left}th{text-align:left;padding:10px 12px}thead th{background:#f5f5f2;border:solid #bfbfba;
 border-width:1px 0;color:#333;text-transform:uppercase}tr{border-bottom:1px solid #e6e4df;padding:0.1em 0.6em}thead>tr{border-bottom:1px solid #000}tbody tr:hover,tbody tr:focus{background:#f7fcff}tbody tr.color-warning:hover,tbody tr.color-warning:focus{background:#fdf8ed}tbody tr.color-error:hover,tbody tr
@@ -52,7 +52,19 @@ text-align: center;
 margin-top: 70px;
 margin-bottom: 70px;
   }
+.roja.centrada h2{
+  text-align: center;
+  color: #a2282a;
+}
+.justificar {
+  text-align: justify;
+}
 .footerwidget{background:#108441;color:#86b59a;padding:20px 0;border-top:1px solid #f7f7f7}.footerwidget h2.title{color:#fff}.footerwidget .left{float:left;margin:10px 10px 0 0}
+/************************************  COLORES AZULES  ***********************************
+#25365f
+#241178
+***************************************************************************/
+
 /*FOOTER PIE DE PAÁGINA*/
 .copyright{background:#25365f;color:#8399ab;text-align:center}
 .map-and-address h2.title{display:none}.google_map p,.google_map .block{margin:0}.google_map iframe{display:block}.footer-menu{margin:0;border:0;background:url('../images/social-media-bg.png');color:#fff;background-size:cover;padding:80px 0}
@@ -271,3 +283,25 @@ padding: 0;
   margin-left: 8em;
   margin-right: 8em;
 }
+
+
+
+/*
+.efectoazul {
+  filter: sepia(80%) hue-rotate(170deg) saturate(50%);
+}
+
+
+.colorear {
+background-image: linear-gradient(
+      rgba(255, 0, 0, 0.3),
+      rgba(255, 0, 0, 0.3)
+    ),
+url('../images/slider-deporte2.jpg');
+
+background-size: contain;
+height: 100%;
+width: 100%;
+
+}
+*/
